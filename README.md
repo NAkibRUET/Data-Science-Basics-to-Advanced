@@ -1,6 +1,6 @@
 # Data-Science-Basics-to-Advanced
 
-##Scrapy
+## Scrapy
 ### To create scrapy class run command 
 ```
 scrapy genspider <file_name> <domain_name>
