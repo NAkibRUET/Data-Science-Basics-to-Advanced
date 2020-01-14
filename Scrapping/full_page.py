@@ -15,7 +15,7 @@ class FullPageSpider(scrapy.Spider):
                 'text':cell.css('span.text::text').extract_first(),
                 'tags':cell.css('a.tag::text').extract()
             }
-            next_url = response.css('li.next > a::attr(href)').extract_first();
+            next_url = response.css('li.next > a::attr(href)').extract_first()
             if next_url:
                 next_page = response.urljoin(next_url)
                 yield scrapy.Request(url=next_page, callback=self.parse)
